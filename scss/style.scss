@@ -53,6 +53,7 @@ h3,
 h4 {
   font-family: 'Fraunces', serif;
   font-weight: 900;
+  color: $Very-dark-desaturated-blue;
 }
 
 header {
@@ -73,7 +74,6 @@ header {
   &-header {
     font-size: clamp(1.2rem, 1.8rem, 2.5rem);
     line-height: 1.2;
-    color: $Very-dark-desaturated-blue;
   }
 
   &-text {
@@ -95,6 +95,24 @@ header {
   .text-box-text {
     color: $Dark-blue;
   }
+}
+
+.testimonials {
+  &-header {
+    text-transform: uppercase;
+    color: $Dark-grayish-blue;
+    font-weight: 700;
+    font-size: clamp(0.8rem, 0.9rem, 1.2rem);
+    letter-spacing: 5px;
+  }
+}
+
+.user-name {
+  font-size: 1rem;
+}
+.user-role {
+  font-size: 0.75rem;
+  color: $Grayish-blue;
 }
 
 /*
@@ -158,6 +176,12 @@ nav {
   }
 }
 
+.testimonial-img {
+  margin: 60px auto 30px;
+}
+.user-info {
+  margin-top: -10px;
+}
 /*
 // COMPONENTS
 // ==========
@@ -203,4 +227,9 @@ header,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.testimonial-img {
+  width: 75px;
+  border-radius: 50%;
 }
