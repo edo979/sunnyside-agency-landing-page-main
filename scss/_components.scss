@@ -132,7 +132,7 @@ header {
 
 .box-column-1 {
   width: 50%;
-  height: Min(50vw, $main-container-max-w/2);
+  height: Min(50vw, 600px/2);
 }
 
 #col-1-img1 {
@@ -194,5 +194,12 @@ header {
 
   a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (min-width: $break-point) {
+  .box-column-1 {
+    width: 25%;
+    height: Min(25vw, 1440px/4);
   }
 }
