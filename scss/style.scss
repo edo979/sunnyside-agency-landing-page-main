@@ -15,7 +15,8 @@
 // COLORS, VARIABLES
 // ======
 */
-$max-mob-width: 600px;
+$main-container-max-w: 600px;
+
 //## Colors
 
 //### Primary
@@ -122,7 +123,7 @@ header {
 */
 .main-container {
   min-width: 350px;
-  max-width: $max-mob-width;
+  max-width: $main-container-max-w;
   margin: 0 auto;
 }
 
@@ -136,10 +137,6 @@ header {
   h1 {
     margin-top: 90px;
   }
-}
-
-nav {
-  display: none;
 }
 
 .arrow-down {
@@ -180,6 +177,18 @@ nav {
 }
 .user-info {
   margin-top: -10px;
+}
+
+.footer-nav {
+  margin: 40px 20px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*
 // COMPONENTS
@@ -239,7 +248,7 @@ header {
 
 .box-column-1 {
   width: 50%;
-  height: Min(50vw, $max-mob-width/2);
+  height: Min(50vw, $main-container-max-w/2);
 }
 
 #col-1-img1 {
@@ -253,4 +262,39 @@ header {
 }
 #col-1-img4 {
   background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+.footer {
+  position: relative;
+  background-color: lighten($color: $Dark-moderate-cyan, $amount: 25%);
+
+  svg path {
+    fill: darken($color: $Dark-moderate-cyan, $amount: 10%);
+  }
+
+  &-nav {
+    &-link {
+      text-decoration: none;
+      color: darken($color: $Dark-moderate-cyan, $amount: 10%);
+    }
+  }
+}
+
+.social-link {
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+}
+
+.attribution {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
