@@ -103,7 +103,6 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fraunces', serif;
   font-weight: 900;
   color: #23303e;
 }
@@ -125,6 +124,14 @@ header h1 {
 
 .nav-links-top-link:hover {
   color: #23303e;
+}
+
+h1,
+h2,
+h3,
+h4,
+.btn-box,
+.nav-links-top-link:hover {
   font-family: 'Fraunces', serif;
 }
 
@@ -346,6 +353,13 @@ header {
 
 .image-box#image-2 {
   background-image: url(../images/mobile/image-stand-out.jpg);
+}
+
+.btn-box {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .text-box,

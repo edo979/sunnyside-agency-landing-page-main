@@ -22,7 +22,6 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fraunces', serif;
   font-weight: 900;
   color: $Very-dark-desaturated-blue;
 }
@@ -45,8 +44,16 @@ header {
 
   &:hover {
     color: $Very-dark-desaturated-blue;
-    font-family: 'Fraunces', serif;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+.btn-box,
+.nav-links-top-link:hover {
+  font-family: 'Fraunces', serif;
 }
 
 .text-box {
