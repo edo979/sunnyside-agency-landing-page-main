@@ -137,10 +137,6 @@ header {
   margin: 0 auto;
 }
 
-.container {
-  padding: 35px 25px;
-}
-
 header {
   position: relative;
 
@@ -230,6 +226,10 @@ header {
 header {
   height: 540px;
   background-image: url(../images/mobile/image-header.jpg);
+}
+
+.header-container {
+  padding: 35px 25px;
 }
 
 .nav-links {
