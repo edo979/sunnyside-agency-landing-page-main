@@ -33,8 +33,9 @@ header {
     line-height: 1.2;
     letter-spacing: 6px;
     color: $White;
-    font-size: clamp(1rem, 2.25rem, 7rem);
+    font-size: clamp(2.25rem, 3rem, 4rem);
     font-weight: 700;
+    width: 100%;
   }
 }
 
@@ -100,7 +101,7 @@ h4,
     text-transform: uppercase;
     color: $Dark-grayish-blue;
     font-weight: 700;
-    font-size: clamp(0.8rem, 0.9rem, 1.2rem);
+    font-size: 0.9rem;
     letter-spacing: 5px;
   }
 }
@@ -111,4 +112,28 @@ h4,
 .user-role {
   font-size: 0.75rem;
   color: $Grayish-blue;
+}
+
+@media (min-width: $break-point) {
+  #band,
+  #audience {
+    text-align: left;
+  }
+
+  .nav-links-top-link {
+    font-size: 1rem;
+    color: $White;
+  }
+
+  .text-box {
+    &-header {
+      font-size: 2.15rem;
+    }
+  }
+
+  .testimonials {
+    &-header {
+      font-size: 1.2rem;
+    }
+  }
 }

@@ -14,7 +14,7 @@ header {
     padding: 40px;
     top: 100px;
     left: 0;
-    width: calc(100%);
+    width: 100%;
 
     background: white;
 
@@ -41,6 +41,19 @@ header {
         text-transform: uppercase;
       }
     }
+  }
+}
+
+.arrow-down {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: calc(210px - 20vw);
+  left: 0;
+  width: 100%;
+
+  img {
+    height: calc(65px + 15vw);
   }
 }
 
@@ -198,8 +211,119 @@ header {
 }
 
 @media (min-width: $break-point) {
+  header {
+    height: 800px;
+    background-image: url(../images/desktop/image-header.jpg);
+
+    h1 {
+      margin-top: calc(210px - 35px);
+      letter-spacing: 10px;
+    }
+  }
+
+  .nav-links {
+    label {
+      display: none;
+    }
+
+    &-top {
+      display: flex;
+      position: relative;
+      padding: 0px;
+      top: 0;
+
+      background: transparent;
+
+      &::before {
+        display: none;
+      }
+
+      &-link {
+        display: block;
+        padding: 15px 30px;
+        text-decoration: none;
+
+        &:hover {
+          background: $White;
+          border-radius: 40px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .arrow-down {
+    bottom: 315px;
+    left: 0;
+    width: 100%;
+
+    img {
+      height: 120px;
+    }
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+
+    &#image-1 {
+      background-image: url(../images/desktop/image-transform.jpg);
+    }
+    &#image-2 {
+      background-image: url(../images/desktop/image-stand-out.jpg);
+    }
+  }
+
+  .text-box-absolute {
+    padding: 70px 180px;
+  }
+
+  .box-column-2 {
+    padding: 165px 25px;
+  }
+
+  #band {
+    padding-left: 165px;
+    padding-right: 105px;
+  }
+
+  #audience {
+    padding-right: 165px;
+    padding-left: 105px;
+  }
+
+  #design {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+
+  #photography {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
+
+  #testimonials {
+    padding: 170px 165px;
+  }
+  .testimonial {
+    p {
+      line-height: 1.8;
+    }
+  }
+
   .box-column-1 {
     width: 25%;
     height: Min(25vw, 1440px/4);
+  }
+
+  #col-1-img1 {
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+  }
+  #col-1-img2 {
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+  }
+  #col-1-img3 {
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+  }
+  #col-1-img4 {
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
   }
 }

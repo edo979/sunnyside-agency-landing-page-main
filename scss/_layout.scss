@@ -34,19 +34,6 @@ header {
   }
 }
 
-.arrow-down {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: calc(210px - 20vw);
-  left: 0;
-  width: 100%;
-
-  img {
-    height: calc(65px + 15vw);
-  }
-}
-
 .text-box {
   position: relative;
 
@@ -110,5 +97,14 @@ header {
   #testimonials,
   #footer-images {
     grid-column: 1 / 3;
+  }
+
+  .testimonials {
+    display: flex;
+    gap: 40px;
+  }
+
+  .text-box-text {
+    margin-bottom: 80px;
   }
 }
