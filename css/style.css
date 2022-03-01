@@ -160,6 +160,16 @@ h4,
   color: #19536b;
 }
 
+#design .text-box-text,
+#photography .text-box-text {
+  font-size: clamp(0.7rem, 0.88rem, 1.1rem);
+}
+
+#design .text-box-header,
+#photography .text-box-header {
+  font-size: clamp(1.1rem, 1.7rem, 2.4rem);
+}
+
 .testimonials-header {
   text-transform: uppercase;
   color: #818498;
@@ -177,10 +187,6 @@ h4,
   color: #a7abae;
 }
 
-/*
-// LAYOUT
-// ======
-*/
 .main-container {
   min-width: 350px;
   max-width: 600px;
@@ -252,7 +258,7 @@ header h1 {
 }
 
 .text-box-text {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .text-box-absolute {
@@ -266,7 +272,7 @@ header h1 {
 }
 
 .testimonial-img {
-  margin: 60px auto 30px;
+  margin: 70px auto 30px;
 }
 
 .user-info {
@@ -295,10 +301,6 @@ header h1 {
           justify-content: center;
 }
 
-/*
-// COMPONENTS
-// ==========
-*/
 header {
   height: 540px;
   background-image: url(../images/mobile/image-header.jpg);
@@ -453,6 +455,11 @@ header {
   background-color: #8bc6ba;
 }
 
+.footer-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 .footer svg path {
   fill: #346a5f;
 }
@@ -462,10 +469,18 @@ header {
   color: #346a5f;
 }
 
+.footer-nav-link:hover {
+  color: white;
+}
+
 .social-link {
   width: 20px;
   height: 20px;
   margin: 0 15px;
+}
+
+.social-link:hover svg path {
+  fill: white;
 }
 
 .attribution {

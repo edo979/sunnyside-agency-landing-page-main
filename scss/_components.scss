@@ -1,7 +1,3 @@
-/*
-// COMPONENTS
-// ==========
-*/
 header {
   height: 540px;
   background-image: url(../images/mobile/image-header.jpg);
@@ -156,6 +152,11 @@ header {
   position: relative;
   background-color: lighten($color: $Dark-moderate-cyan, $amount: 25%);
 
+  &-container {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
   svg path {
     fill: darken($color: $Dark-moderate-cyan, $amount: 10%);
   }
@@ -164,6 +165,9 @@ header {
     &-link {
       text-decoration: none;
       color: darken($color: $Dark-moderate-cyan, $amount: 10%);
+      &:hover {
+        color: $White;
+      }
     }
   }
 }
@@ -172,6 +176,12 @@ header {
   width: 20px;
   height: 20px;
   margin: 0 15px;
+
+  &:hover {
+    svg path {
+      fill: $White;
+    }
+  }
 }
 
 .attribution {

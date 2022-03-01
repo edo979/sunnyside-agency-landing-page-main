@@ -85,6 +85,16 @@ h4,
   }
 }
 
+#design,
+#photography {
+  .text-box-text {
+    font-size: clamp(0.7rem, 0.88rem, 1.1rem);
+  }
+  .text-box-header {
+    font-size: clamp(1.1rem, 1.7rem, 2.4rem);
+  }
+}
+
 .testimonials {
   &-header {
     text-transform: uppercase;
